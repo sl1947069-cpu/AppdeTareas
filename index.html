@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f6b63">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+<title>Mi asistente</title>
+</head>
+<body>
+<main id="v" aria-live="polite"></main>
+<nav id="nav" aria-label="Secciones">
+  <button data-act="tab" data-v="dia">Mi día</button>
+  <button data-act="tab" data-v="armar">Armar mi día</button>
+  <button data-act="tab" data-v="frec">Frecuentes</button>
+  <button data-act="tab" data-v="cal">Calendario</button>
+  <button data-act="tab" data-v="stats">Estadísticas</button>
+  <button data-act="tab" data-v="olv">Olvidadas</button>
+  <button data-act="tab" data-v="cfg">Ajustes</button>
+</nav>
+<dialog id="dlg"></dialog>
+<input type="file" id="file" accept="application/json,.json" hidden>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
